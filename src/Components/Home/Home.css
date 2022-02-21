@@ -1,0 +1,17 @@
+.Home {
+    background-color: aliceblue;
+    width: 52%;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+}
+.title-buy,.description-vente{
+    color: red;
+}

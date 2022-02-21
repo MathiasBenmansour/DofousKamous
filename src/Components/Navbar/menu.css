@@ -1,0 +1,28 @@
+.menu-nav {
+  width: 25%;
+}
+
+.nav-tuto,
+.nav-buy,
+.nav-send,
+.nav-forum,
+.nav-contact {
+  color: darkcyan;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 28px;
+  margin: 20px 0px 20px 24px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  color: darkcyan;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 28px;
+  margin: 20px 0px 20px 24px;
+}
+.activeLink {
+  background-color: lightblue;
+}

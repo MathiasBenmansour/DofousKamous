@@ -1,0 +1,21 @@
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #c1c1c1;
+    width: 52%;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.message-form {
+  margin-right: 50px;  
+}
+
+.send-message {
+    width: 15%;
+    margin-left: 24px;
+}
