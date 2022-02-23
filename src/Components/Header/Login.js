@@ -1,7 +1,31 @@
+import {useSelector,useDispatch} from 'react-redux';
+import {modaleLoged,setModale} from '../../actions/user';
+
+
+
+
 export default function Login() {
+
+const loged = useSelector((state) => state.loged);
+
+const dispatch = useDispatch();
+
+const logModale = () => {
+  dispatch(modaleLoged());
+}
+
+
+
+
+
   return (
+   
     <div>
-      <form className="login">
+      <button className="header-login" onClick={logModale}>Se Connecter</button>
+     
+     {loged&& (
+       <div>
+     <form className="login">
         <label className="mail">
           E-mail :
           <input type="text" name="name" value="Entrez votre E-mail" />
@@ -11,7 +35,12 @@ export default function Login() {
           <input type="text" name="name" value="Entrez votre message" />
         </label>
         <input className="send-message" type="submit" value="Envoyer" />
-      </form>
+      </form></div>
+     )}     
+     
+   
+     
     </div>
+   
   );
 }

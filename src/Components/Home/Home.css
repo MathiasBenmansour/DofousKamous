@@ -1,8 +1,12 @@
 .Home {
-    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./bg_home.jpg');
+    background-size: 810px;
+    background-repeat: no-repeat;
     width: 52%;
     height: 400px;
-    margin-top: 50px;
+    margin:0 auto;
 }
 
 .description{

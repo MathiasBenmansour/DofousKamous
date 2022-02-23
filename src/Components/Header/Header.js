@@ -1,12 +1,13 @@
 
 import "./header.css";
+import Login from "./Login";
 
 
 function Headers() {
   return (
     <div className="header">
       <button className="header-chat">LiveChat</button>
-      <button className="header-login">Se Connecter</button>
+      <Login/>
       
       </div>
   );
