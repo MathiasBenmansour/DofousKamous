@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import sendKamas from './sendKamas';
-import logedModale from './login';
+import logedModale from './logedModale';
 
 
 
 
 export default combineReducers({
-  sendKamas,logedModale,
+  sendKamas,logedModale
 });

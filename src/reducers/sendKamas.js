@@ -1,28 +1,23 @@
-import {MODALE} from '../actions/user.js';
-import {CLOSEMODAL} from '../actions/user.js';
+import {MODALE} from "../actions/user";
+import { CLOSEMODAL } from "../actions/user";
 
 const INITIAL_STATE = {
-modal:false,
-
+  modal: false,
 };
 
 function sendKamas(state = INITIAL_STATE, action) {
   switch (action.type) {
-  
-    case MODALE: 
-        return {
-          ...state,
-          modal: !action.modal,
-          
-        };
-      
-      case CLOSEMODAL: 
-        return {
-          ...state,
-          modal: action.modal,
-          
-        };
-      
+    case MODALE:
+      return {
+        ...state,
+        modal: !action.modal,
+      };
+
+    case CLOSEMODAL:
+      return {
+        ...state,
+        modal: action.modal,
+      };
   }
   return state;
 }

@@ -21,7 +21,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // );
 
 // == Store
-const store = createStore(rootReducer,enhancers,);
+const store = createStore(rootReducer);
 
 // == Export
 export default store;

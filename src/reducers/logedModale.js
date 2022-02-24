@@ -1,20 +1,20 @@
-import {LOGED} from '../actions/user.js';
+import {LOGIN} from '../actions/user.js';
 
 const INITIAL_STATE = {
-    loged:false,
+    login:false,
     
     };
     
     function logedModale(state = INITIAL_STATE, action) {
       switch (action.type) {
       
-        case LOGED: {
+        case LOGIN: {
             return {
               ...state,
-              loged: !action.loged,
+              login: !action.login,
               
             };
-          }
+          };
          
       }
       return state;

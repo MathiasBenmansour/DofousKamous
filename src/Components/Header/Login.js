@@ -6,7 +6,7 @@ import {modaleLoged,setModale} from '../../actions/user';
 
 export default function Login() {
 
-const loged = useSelector((state) => state.loged);
+const logedUser = useSelector((state) => state.login);
 
 const dispatch = useDispatch();
 
@@ -23,7 +23,7 @@ const logModale = () => {
     <div>
       <button className="header-login" onClick={logModale}>Se Connecter</button>
      
-     {loged&& (
+     {logedUser&& (
        <div>
      <form className="login">
         <label className="mail">

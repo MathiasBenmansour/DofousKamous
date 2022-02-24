@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setModale,closeDisplayModale } from "../../actions/user";
 
 export default function SendKamas() {
-  const modal = useSelector((state) => state.modal);
+  const modaling = useSelector((state) => state.modal);
 
   const dispatch = useDispatch();
 
@@ -28,7 +28,7 @@ export default function SendKamas() {
         Dofus 1.29
       </button>
 
-      {modal && (
+      {modaling && (
         <div className="modal">
           <p className="description-modal">
             Etes-vous sûr de vendre des kamas sur Dofus ?

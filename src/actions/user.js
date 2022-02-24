@@ -1,6 +1,6 @@
 export const MODALE = "MODALE";
 export const CLOSEMODAL = "CLOSEMODAL";
-export const LOGED = "LOGED";
+export const LOGIN= "LOGIN";
 
 
 export const setModale = (modal) => ({
@@ -13,7 +13,7 @@ export const setModale = (modal) => ({
     modal: modal,
   });
 
-  export const modaleLoged = (loged) => ({
-    type: LOGED,
-    loged: loged,
+  export const modaleLoged = (login) => ({
+    type: LOGIN,
+    login: login,
   });

@@ -6,11 +6,13 @@ import {BrowserRouter} from 'react-router-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import sendKamas from './reducers/sendKamas';
+import store from './store';
 
-const Store = createStore(sendKamas);
+
+
 
 ReactDOM.render(
-  <Provider store= {Store}>
+  <Provider store= {store}>
   <BrowserRouter>
     <App />
   </BrowserRouter>
