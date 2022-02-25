@@ -1,46 +1,44 @@
-import {useSelector,useDispatch} from 'react-redux';
-import {modaleLoged,setModale} from '../../actions/user';
-
-
-
+import { useSelector, useDispatch } from "react-redux";
+import { modaleLoged} from "../../actions/user";
+import Register from "../Register/Register";
 
 export default function Login() {
+  const logedUser = useSelector((state) => state.logedModale.login);
 
-const logedUser = useSelector((state) => state.login);
+  const dispatch = useDispatch();
 
-const dispatch = useDispatch();
-
-const logModale = () => {
-  dispatch(modaleLoged());
-}
-
-
-
-
+  const logModale = () => {
+    dispatch(modaleLoged());
+  };
 
   return (
-   
-    <div>
-      <button className="header-login" onClick={logModale}>Se Connecter</button>
-     
-     {logedUser&& (
-       <div>
-     <form className="login">
-        <label className="mail">
-          E-mail :
-          <input type="text" name="name" value="Entrez votre E-mail" />
-        </label>
-        <label className="message-form">
-          Votre demande :
-          <input type="text" name="name" value="Entrez votre message" />
-        </label>
-        <input className="send-message" type="submit" value="Envoyer" />
-      </form></div>
-     )}     
-     
-   
-     
+    <div className="login-modal">
+      <button className="header-login" onClick={logModale}>
+        Connexion
+      </button>
+      <Register />
+
+      {logedUser && (
+        <div>
+          <form className="login">
+            <label className="mail">
+              E-mail* :
+              <input type="text" name="name" value="Entrez votre E-mail" />
+            </label>
+            <label className="message-form">
+              Mot de passe* :
+              <input
+                type="text"
+                name="name"
+                value="Entrez votre Mot de passe"
+              />
+            </label>
+            <div className="btn-log">
+              <input className="send-log" type="submit" value="Connexion" />
+            </div>
+          </form>
+        </div>
+      )}
     </div>
-   
   );
 }

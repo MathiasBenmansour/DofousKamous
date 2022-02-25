@@ -1,145 +1,132 @@
-.dofus2{
-    width: 15%;
-    margin: 15px;
-    position: relative;
-    bottom: 40px;
-    left: 190px;
-    
+.dofus2 {
+  width: 15%;
+  margin: 15px;
+  position: relative;
+  bottom: 40px;
+  left: 190px;
 }
 
 .send-kamas {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    background-image: url('/public/ventek.png');
-    background-repeat: no-repeat;
-    justify-content: space-evenly;
-    align-items: baseline;
-    align-content: center;
-    width: 52%;
-    height: 465px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  background-image: url("/public/ventek.png");
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+  width: 52%;
+  height: 465px;
 }
 
-.button-kamas{
-    
-    position: relative;
-    right: 260px;
-    left: 2px;
-    top: 190px;
-    height: 8%;
-    margin: 5px;   
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: rgb(9, 238, 161);
+.button-kamas {
+  position: relative;
+  right: 260px;
+  left: 2px;
+  top: 200px;
+  height: 8%;
+  width: 13%;
+  border-radius: 8%;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  background-color: rgb(9, 238, 161);
 }
 
-.button-retro{
-    position: relative;
-    left: 340px;
-    top: 200px;
-    height: 8%;
-    /* margin: 0px 0px 20px 5px; */
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: rgb(9, 238, 161);
+.button-retro {
+  position: relative;
+  left: 340px;
+  top: 200px;
+  height: 8%;
+  width: 13%;
+  border-radius: 8%;
+  color: rgb(99, 78, 78);
+  /* margin: 0px 0px 20px 5px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  background-color: rgb(9, 238, 161);
 }
 
 .dofus-retro {
-    width: 24%;
-    position: relative;
-    top: 30px;
-    left: 600px;
-
-    
+  width: 24%;
+  position: relative;
+  top: 30px;
+  left: 600px;
 }
 
-.modal{
-    border: 1px solid black;
-    position: absolute;
-    left: 22%;
-    bottom: 65%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-    z-index: 1;
-    background-color: rgba(222, 230, 236, 0.637);
-    width: 60%;
-
-    
-
+.modal {
+  border: 1px solid black;
+  position: absolute;
+  left: 22%;
+  bottom: 65%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  z-index: 1;
+  background-color: rgba(222, 230, 236, 0.637);
+  width: 60%;
 }
 
-.description-modal{
-    font-size:23px;
-    font-style: italic;
-    font-family: sans-serif;
-    margin: 5px;
-   
-
+.description-modal {
+  font-size: 23px;
+  font-style: italic;
+  font-family: sans-serif;
 }
 
-.confirm-modal,.cancel-modal {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    width: 12%;
-    border-radius: 15%;
-    background-color: rgba(35, 172, 47, 0.918);
+.confirm-modal,
+.cancel-modal {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 8%;
+  border-radius: 15%;
+  background-color: rgba(35, 172, 47, 0.918);
 }
 
-@media screen and (max-width: 1669px){
-    .dofus-retro  {
-      width: 10%;
-      position: fixed;
-      top: 400px;
-      left: 950px
-  
+@media screen and (max-width: 1669px) {
+  .dofus-retro {
+    width: 10%;
+    position: fixed;
+    top: 400px;
+    left: 950px;
   }
-    
-  }
+}
 
-  @media screen and (max-width: 1669px){
-    .dofus-retro  {
-      width: 10%;
-      position: fixed;
-      top: 400px;
-      left: 950px
-  
+@media screen and (max-width: 1669px) {
+  .dofus-retro {
+    width: 10%;
+    position: fixed;
+    top: 400px;
+    left: 950px;
   }
   .dofus2 {
-      position: fixed;
-      width: 8%;
-      bottom: 350px;
-      left: 290px;
+    position: fixed;
+    width: 8%;
+    bottom: 350px;
+    left: 290px;
   }
-    
-  }
-  
-  @media screen and (max-width: 1300px){
-    .dofus-retro  {
-      width: 10%;
-      position: fixed;
-      top: 420px;
-      left: 950px
-  
+}
+
+@media screen and (max-width: 1300px) {
+  .dofus-retro {
+    width: 10%;
+    position: fixed;
+    top: 420px;
+    left: 950px;
   }
   .dofus2 {
     position: fixed;
     width: 8%;
     bottom: 370px;
     left: 290px;
+  }
 }
-    
+
+@media screen and (max-width: 1100px) {
+  .dofus-retro {
+    width: 10%;
+    position: fixed;
+    top: 430px;
+    left: 980px;
   }
-  
-  @media screen and (max-width: 1100px){
-    .dofus-retro  {
-      width: 10%;
-      position: fixed;
-      top: 430px;
-      left: 980px;
-  
-  }
-    
-  }
-  
+}

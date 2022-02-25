@@ -7,7 +7,7 @@
 .nav-send,
 .nav-forum,
 .nav-contact {
-  color: darkcyan;
+  color: rgb(4, 66, 66);
   text-transform: uppercase;
   font-family: fantasy;
   font-size: 28px;
@@ -25,4 +25,5 @@ nav {
 }
 .activeLink {
   background-color: lightblue;
+  width: 35%;
 }

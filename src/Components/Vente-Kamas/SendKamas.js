@@ -2,17 +2,20 @@ import "./sendkamas.css";
 import enu from "./enu.png";
 import iop from "./Eratz.png";
 import { useSelector, useDispatch } from "react-redux";
-import { setModale,closeDisplayModale } from "../../actions/user";
+import { setModale,closeDisplayModale, MODALE } from "../../actions/user";
 
 export default function SendKamas() {
-  const modaling = useSelector((state) => state.modal);
+  const modaling = useSelector((state) => state.sendKamas.modal);
 
   const dispatch = useDispatch();
 
   const modale = () => {
-    dispatch(setModale());
+    dispatch({
+      type: MODALE,
+    })
+    // dispatch(type());
   };
-
+  console.log(modaling)
   const closeModale = () => {
     dispatch(closeDisplayModale())
   }
