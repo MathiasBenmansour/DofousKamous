@@ -1,14 +1,18 @@
 import { useSelector, useDispatch } from "react-redux";
-import { modaleLoged} from "../../actions/user";
+import { modaleLoged,textLogin} from "../../actions/user";
 import Register from "../Register/Register";
 
 export default function Login() {
-  const logedUser = useSelector((state) => state.logedModale.login);
+  const { login,mail,password,name} = useSelector((state) => state.logedModale);
 
   const dispatch = useDispatch();
 
   const logModale = () => {
     dispatch(modaleLoged());
+  };
+
+  const setMail = (e) => {
+    dispatch(textLogin(e.target.mail,e.target.value))
   };
 
   return (
@@ -18,19 +22,22 @@ export default function Login() {
       </button>
       <Register />
 
-      {logedUser && (
+      {login && (
         <div>
           <form className="login">
             <label className="mail">
               E-mail* :
-              <input type="text" name="name" value="Entrez votre E-mail" />
+              <input onChange={setMail}
+              type="email" name="email" 
+              
+               />
             </label>
             <label className="message-form">
               Mot de passe* :
-              <input
-                type="text"
-                name="name"
-                value="Entrez votre Mot de passe"
+              <input onChange={setMail}
+                type="password"
+                name="paswword"
+                
               />
             </label>
             <div className="btn-log">

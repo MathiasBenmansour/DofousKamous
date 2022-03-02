@@ -24,3 +24,79 @@
     background-color: rgb(162, 167, 172);
     margin-left: 12px;
 }
+
+@media screen and (max-width: 767px) {
+    body {
+      background-image: url("/public/dragoeuf-2.jpg");
+    }
+  
+    .send-kamas {
+      display: flex;
+      flex-direction: row;
+      background-image: none;
+      justify-content: space-evenly;
+      background-size: cover;
+      width: 40%;
+      height: 358px;
+    }
+    .dofus-retro {
+      position: absolute;
+      top: 200px;
+      left: 480px;
+      width: 15%;
+    }
+  
+    .dofus2 {
+      position: absolute;
+      width: 10%;
+      bottom: 550px;
+      left: 15px;
+    }
+  
+    .button-kamas {
+      position: relative;
+      margin-top: 40px;
+      right: 260px;
+      left: 150px;
+      top: 170px;
+      width: auto;
+      height: 8%;
+      border-radius: 8%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      background-color: rgb(9, 238, 161);
+    }
+    .button-retro {
+      position: relative;
+      width: auto;
+      left: 350px;
+      top: 210px;
+      height: 8%;
+      border-radius: 8%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      background-color: rgb(9, 238, 161);
+    }
+    .nav-tuto,
+    .nav-buy,
+    .nav-send,
+    .nav-forum,
+    .nav-contact {
+      color: rgb(4, 66, 66);
+      text-transform: uppercase;
+      font-family: fantasy;
+      font-size: 16px;
+      margin: 20px 0px 20px 24px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+   h1 {
+       text-align: center;
+       font-size: 32px;
+       margin: 20px;
+       text-transform: uppercase;
+       color: rgba(23, 32, 156, 0.993);
+   }
+
+}

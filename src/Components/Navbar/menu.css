@@ -27,3 +27,22 @@ nav {
   background-color: lightblue;
   width: 35%;
 }
+
+@media screen and (max-width:767px) {
+
+  .menu-nav , nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-send{
+    color: rgb(4, 66, 66);
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-size: 12px;
+    /* margin: 20px 0px 20px 24px; */
+  }
+
+}

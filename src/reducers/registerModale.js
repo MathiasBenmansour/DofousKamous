@@ -1,7 +1,9 @@
 import {REGISTER} from '../actions/user.js';
+import {CLOSEBUTTON} from '../actions/user.js';
 
 const INITIAL_STATE = {
     register:false,
+    closemodal:true,
     
     };
     
@@ -14,6 +16,17 @@ const INITIAL_STATE = {
               register: !action.register,
               
             };
+
+            
+          }
+          case CLOSEBUTTON: {
+            return {
+              ...state,
+              closemodal: !action.closemodal,
+              
+            };
+
+            
           };
          
       }

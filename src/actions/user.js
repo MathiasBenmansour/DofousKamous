@@ -2,6 +2,9 @@ export const MODALE = "MODALE";
 export const CLOSEMODAL = "CLOSEMODAL";
 export const LOGIN= "LOGIN";
 export const REGISTER= "REGISTER";
+export const TEXTLOGIN= "TEXTLOGIN";
+export const MAILREGISTER= "MAILREGISTER";
+export const CLOSEBUTTON= "CLOSEBUTTON";
 
 
 export const setModale = (modal) => ({
@@ -23,3 +26,15 @@ export const setModale = (modal) => ({
     type: REGISTER,
     register: register,
   });
+
+  export const textLogin = (mail,value) => ({
+    type:TEXTLOGIN,
+    mail:mail,
+    value:value,
+  });
+
+  export const closeModal = (closemodal) => ({
+    type:CLOSEBUTTON,
+    closemodal:closemodal,
+    
+  })

@@ -1,6 +1,7 @@
 import "./sendkamas.css";
 import enu from "./enu.png";
 import iop from "./Eratz.png";
+import ventek from "./ventek.png";
 import { useSelector, useDispatch } from "react-redux";
 import { setModale,closeDisplayModale, MODALE } from "../../actions/user";
 
@@ -26,10 +27,14 @@ export default function SendKamas() {
       <button className="button-kamas" onClick={modale}>
         Dofus 2.0
       </button>
+      <div className="container-dofus1">
+       
       <img className="dofus-retro" src={iop} alt="Dofus Rétro" />
       <button className="button-retro" onClick={modale}>
         Dofus 1.29
       </button>
+    
+     </div>
 
       {modaling && (
         <div className="modal">

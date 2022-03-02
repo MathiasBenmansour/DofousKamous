@@ -7,6 +7,7 @@ import message from './message.jpg';
 export default function Contact() {
   return (
     <form className="form-contact">
+       <input className="close-form" type="submit" value="x" />
       <label className="mail">
       <img  className="name-icons"src={name} alt="Mail" /> 
         
@@ -28,7 +29,7 @@ export default function Contact() {
       </label>
       
       <input className="send-message" type="submit" value="Envoyer" />
-      <input className="close-form" type="submit" value="x" />
+     
     </form>
   );
 }
