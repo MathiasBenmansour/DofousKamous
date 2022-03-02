@@ -1,12 +1,13 @@
 .Home {
     display: flex;
     flex-direction: column;
-    background-image: url('./bg_home.jpg');
+    background-image: url('/public/img/bg_home.jpg');
     background-size: 810px;
     background-repeat: no-repeat;
     width: 52%;
     height: 400px;
     margin:0 auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .description{
@@ -18,4 +19,5 @@
 }
 .title-buy,.description-vente{
     color: red;
+    margin: 20px;
 }

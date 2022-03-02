@@ -47,7 +47,6 @@
 }
 
 .modal {
-  
   border: 1px solid black;
   position: absolute;
   left: 22%;
@@ -84,8 +83,6 @@
   body {
     background-image: none;
     background-color: rgb(21, 43, 43);
-   
-
   }
 
   .modal {
@@ -100,16 +97,17 @@
 
   .send-kamas {
     position: fixed;
-    background-image: url("./ventek.png");
+    background-image: url("../../img/decors/plateforme.png");
     background-repeat: no-repeat;
     background-size: 350px;
     height: 100%;
     width: 100%;
     top: 450px;
+    margin-left: 36px;
   }
-  .dofus-retro{
+  .dofus-retro {
     position: fixed;
-    background-image: url("./ventek.png");
+    background-image: url("../../img/decors/plateforme.png");
     background-repeat: no-repeat;
     background-size: 350px;
     left: 700px;
@@ -119,8 +117,8 @@
 
   .dofus2 {
     position: fixed;
-    top: 390px;
-    left: 105px;
+    top: 385px;
+    left: 130px;
     bottom: 0;
     width: 100px;
   }
@@ -132,16 +130,17 @@
     left: 820px;
   }
 
-  .button-retro{
+  .button-retro {
     position: fixed;
-    top: 800px;
+    top: 750px;
     left: 800px;
     width: 150px;
   }
 
   .button-kamas {
     position: fixed;
-    top: 800px;
+    top: 750px;
+    left: 120px;
     width: 160px;
   }
 }

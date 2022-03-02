@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 767px) {
     body {
-      background-image: url("/public/dragoeuf-2.jpg");
+      background-image: url("/public/img/bg-mobile-dof.jpg");
     }
   
     .send-kamas {

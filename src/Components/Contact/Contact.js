@@ -1,8 +1,8 @@
 import "./contact.css";
-import mail from './email.png';
-import phone from './smartphone.png';
-import name from './name.jpg';
-import message from './message.jpg';
+import mail from '../../img/icons/email.png';
+import phone from '../../img/icons/smartphone.png';
+import name from '../../img/icons/name.jpg';
+import message from '../../img/icons/message.jpg';
 
 export default function Contact() {
   return (

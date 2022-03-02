@@ -1,7 +1,6 @@
 import "./sendkamas.css";
-import enu from "./enu.png";
-import iop from "./Eratz.png";
-import ventek from "./ventek.png";
+import enu from "../../img/Perso/enu.png"
+import iop from "../../img/Perso/Eratz.png"
 import { useSelector, useDispatch } from "react-redux";
 import { setModale, closeDisplayModale, MODALE } from "../../actions/user";
 
